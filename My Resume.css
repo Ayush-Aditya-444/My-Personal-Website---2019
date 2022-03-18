@@ -1,0 +1,29 @@
+.Download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 30vh;
+  }
+a{
+    display: block;
+    background: #00A9D4;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 320px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+a:hover{
+    background: #0415fa;
+}
+.btn-2{
+    background: yellow;
+}
+.btn-2:hover{
+    background: yellowgreen;
+}
