@@ -1,0 +1,199 @@
+body{
+    background-color: #EAF6F6;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: blueviolet;
+    border-width: 5px;
+    width: 30%;
+}
+
+h1{
+    color: #66bfbf;
+}
+
+h3{
+    color: #66bfbf;
+}
+element.style{
+    padding-left: 250px;
+    border-top-width: 200px;
+    padding-top: 100px;
+}
+nav{
+  top: 0px;
+	width: 90%;
+	height: 90px;
+	background-color: #0abaf0;
+	line-height: 75px;
+	padding:0px 100px;
+	position:fixed;
+	z-index: 1;
+}
+nav .logo{
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1.5px; 
+}
+nav .logo p{
+	float: left;
+	color:#fff;
+	text-transform: uppercase;
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding:0px 32px;
+}
+nav ul li a:hover{
+	color:#3010bd;
+}
+nav ul li .active{
+	color:#470ee6;
+}
+.Social{
+    background-color: #02b8f0;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+    background-color: #f4f9fa;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #ff0000;
+  }
+.skills{
+  width: 70%;
+  max-width: 400px;
+  padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: #3010bd;
+  margin: 20px 0;
+  font-family: sans-serif;
+  transition: all 0.3s ease-out;
+}
+.skill-bar{
+  height: 14px;
+  background-color: rgb(105, 2, 240);
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+}
+.skill-per{
+  height: 14px;
+  background: rgb(2, 232, 240);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+  transition: all 0.3s ease-out;
+}
+.skill-per ::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: rgb(4, 206, 241);
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+  transition: all 0.3s ease-out;
+}
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  background: rgb(5, 245, 245);
+  height: 10px;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+}
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
